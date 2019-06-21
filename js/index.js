@@ -1,44 +1,49 @@
-function deleteItem(event){
+function deleteItem(event) {
 
 }
 
-function getPriceByProduct(itemNode){
-
+function getPriceByProduct(itemNode) {
+  var precioId = document.getElementById(itemNode).textContent;;
+  return precioId
 }
 
-function updatePriceByProduct(productPrice, index){
+function updatePriceByProduct(productPrice, index) {
 
 }
 
 function getTotalPrice() {
 
+  const inputQT = document.querySelector("input")
+  const precioValue = getPriceByProduct("precio");
+
+  document.getElementById("total").innerHTML = (Number(inputQT.value) * Number(precioValue));
 }
 
-function createQuantityInput(){
-
-}
-
-function createDeleteButton(){
-
-}
-
-function createQuantityNode(){
+function createQuantityInput() {
 
 }
 
-function createItemNode(dataType, itemData){
+function createDeleteButton() {
 
 }
 
-function createNewItemRow(itemName, itemUnitPrice){
+function createQuantityNode() {
 
 }
 
-function createNewItem(){
+function createItemNode(dataType, itemData) {
 
 }
 
-window.onload = function(){
+function createNewItemRow(itemName, itemUnitPrice) {
+
+}
+
+function createNewItem() {
+
+}
+
+window.onload = function () {
   var calculatePriceButton = document.getElementById('calc-prices-button');
   var createItemButton = document.getElementById('new-item-create');
   var deleteButtons = document.getElementsByClassName('btn-delete');
@@ -46,7 +51,7 @@ window.onload = function(){
   calculatePriceButton.onclick = getTotalPrice;
   createItemButton.onclick = createNewItem;
 
-  for(var i = 0; i<deleteButtons.length ; i++){
+  for (var i = 0; i < deleteButtons.length; i++) {
     deleteButtons[i].onclick = deleteItem;
   }
 };
