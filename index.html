@@ -14,27 +14,62 @@
   </head>
   <body>
     <div class="textHead">
-      <h1>Hironhack Merchandising Shop</h1>
+      <h1>Ironhack Merchandising Shop</h1>
+    </div>
+    <div id="all-wrapper">
+      <div class="wrapper" id="1">
+        <div>
+          <span>name producto</span>
+        </div>
+        <div>
+          <span class="euro precio">25.00</span>
+        </div>
+        <div class="quantity">
+          QT: <input class="input" type="text" name="fname" />
+        </div>
+        <div>
+          <span class="euro total">0.00</span>
+        </div>
+        <div>
+          <button class="btn btn-delete ">delete</button>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div>
+          <span>name producto</span>
+        </div>
+        <div>
+          <span class="euro precio" id="precio-int">15.00</span>
+        </div>
+        <div class="quantity">
+          QT: <input class="input" type="text" name="fname" />
+        </div>
+        <div>
+          <span class="euro total">0.00</span>
+        </div>
+        <div>
+          <button class="btn btn-delete">delete</button>
+        </div>
+      </div>
     </div>
     <div class="wrapper">
+      <div>name: <input id="new-name" type="text" name="fname" /></div>
+      <div>cost: <input id="new-cost" type="text" name="fname" /></div>
       <div>
-        <span>name producto</span>
-      </div>
-      <div>
-        <span class="euro" id="precio">10.00</span>
-      </div>
-      <div class="quantity">QT: <input type="text" name="fname" /></div>
-      <div>
-        <span class="euro" id="total">0.00</span>
-      </div>
-      <div>
-        <button class="btn btn-delete ">delete</button>
+        <button class="btn btn-white" id="new-item-create">Cerate</button>
       </div>
     </div>
+
     <div class="calculateBUtton">
       <button id="calc-prices-button" class="btn btn-success">
         Calculate Prices
       </button>
+    </div>
+    <div>
+      <h2 class="calculateBUtton">
+        Total price: <span class="euro" id="total-value">0.00</span>
+      </h2>
     </div>
   </body>
 </html>
